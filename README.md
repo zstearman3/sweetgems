@@ -1,24 +1,36 @@
+# Simple Application for Sweet Gems website!
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
-
-
-Welcome to your Rails project on Cloud9 IDE!
-
-To get started, just do the following:
-
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://sweetgems-zstearman3.c9users.io/).
-
-Happy coding!
-The Cloud9 IDE team
+This is the application behind the website for Sweet Gems in Houston, TX.
+[*Sweet Gems:
+Bakery and Cafe*](http://www.sweetgems.com/)
+by [Megan Stearman](http://www.megstearman.com/).
 
 
-## Support & Documentation
+## Getting started
 
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+To get started with the app, clone the repo and then install the needed gems:
+
+```
+$ bundle install
+```
+
+Next, migrate the database:
+
+```
+$ rails db:migrate
+```
+
+Finally, run the test suite to verify that everything is working correctly:
+
+```
+$ rspec spec
+```
+
+If the test suite passes, you'll be ready to run the app in a local server:
+
+```
+$ rails server
+```
+
+For more information, see the
+[*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).
