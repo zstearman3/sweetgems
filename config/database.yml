@@ -3,7 +3,7 @@ default: &default
   encoding: unicode
   pool: 5
   username: <%= ENV['USERNAME'] %>
-  password: <%= ENV['PASSWORD'] %>
+  password: Panther20zss
   host:     <%= ENV['IP'] %>
 
 development:
