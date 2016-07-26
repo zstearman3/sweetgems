@@ -1,21 +1,6 @@
-<h1>Welcome To Sweet Gems!</h1>
 <div class="owl-carousel">
   <div><%= link_to image_tag("blueberrycheesecake.jpg", :height => 200), root_url, id: "blueberry-cheesecake" %></div>
   <div><%= link_to image_tag("saltedcaramel.jpg", :height => 200), root_url, id: "salted-caramel" %></div>
   <div><%= link_to image_tag("blueberrytop.jpg", :height => 200), root_url, id: "blueberry-top" %></div>
 </div>
 <p>Visit this page again later. More coming soon!</p>
-
-<script>
-  $(document).ready(function () {
-    $(".owl-carousel").owlCarousel({
-      items : 5,
-      autoPlay: 5000,
-      singleItem: true,
-      stopOnHover: true,
-      paginationSpeed : 1000,
-      goToFirstSpeed : 2000,
-      // transitionStyle : "fade"
-    });
-  });
-</script>
