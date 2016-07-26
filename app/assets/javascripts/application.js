@@ -18,4 +18,4 @@
 //= require owl.carousel
 
 $(function(){ $(document).foundation(); });
-$(".owl-carousel").owlCarousel();
+ 
