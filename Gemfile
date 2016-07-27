@@ -8,11 +8,13 @@ gem 'coffee-rails',            '~> 4.2.1'
 gem 'jquery-rails',            '~> 4.1.1'
 gem 'turbolinks',              '~> 5.0'
 gem 'jbuilder',                '~> 2.4.1'
+gem 'bootstrap-will_paginate', '~> 0.0'
+gem 'bootstrap-sass',          '~> 3.3'
 gem 'owlcarousel-rails'
 gem 'sass-rails', '~> 5.0.6'
 gem 'uglifier', '>= 1.3.0'
-gem 'foundation-rails'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sprockets', '3.6.3'
 
 
 group :development, :test do

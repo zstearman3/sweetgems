@@ -11,9 +11,39 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
  *= require_self
- *= require foundation_and_overrides
  *= require owl.carousel
  *= require owl.theme
  */
+ 
+
+@import
+  'abstracts/variables',
+  'abstracts/mixins',
+  'abstracts/miscellaneous';
+
+@import 
+  'vendors/helpers';
+
+@import 
+  'base/typography';
+
+@import 
+  'layouts/header';
+  // 'layouts/body',
+  // 'layouts/footer',
+  // 'layouts/sidebar',
+  // 'layouts/forms';
+
+/*Empty Placeholder */
+@import 
+  'components/buttons',
+  'components/owlcarousel';
+  
+/*Empty Placeholder */
+@import 
+  'pages/module';
+  
+/*Empty Placeholder */
+@import
+  'themes/module';
