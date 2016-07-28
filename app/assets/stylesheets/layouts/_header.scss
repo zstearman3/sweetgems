@@ -1,3 +1,6 @@
+.header{
+  padding-top: 0;
+}
 .logo {
   text-align: center;
   text-transform: uppercase;
@@ -9,7 +12,6 @@
 }
 .navbar{
   text-align: center;
-  padding: 15px 0 0 0;
   margin: 0 0 0;
   ul {
     list-style: none;
@@ -18,7 +20,7 @@
     li {
       display: inline-block !important;
       a {
-        font-size: 1.75em;
+        font-size: 1.5em;
         font-weight: 650;
         padding: 15px 10px;
       }
@@ -26,39 +28,36 @@
   }
 }
 
-// @media screen and (min-width: 768px) {
-//   .navbar-inverse{
-//     background-color: gray;
-//     padding: 10px 0 0 0;
+@media screen and (min-width: 768px) {
+  .header{
+    background-color: gray;
+    background: rgba(255, 255, 255, 0.2);
     
-//     #logo{
-//       float: left;
-//       margin-right: 1em;
-//       margin-left: -2em;
-//       padding-top: 7px;
-//       padding-bottom: 7px;
-//       font-size: 1.7em;
-//       color: #fff;
-//       text-transform: uppercase;
-//       letter-spacing: -1px;
-//       font-weight: bold;
-//     }
+    .logo-container{
+      float: left;
+      padding-left: 5%;
+    }
     
-//     .navbar-nav {
-//       background: none;
-//       margin: 10px 0 0 0;
-//       .dropdown-menu {
-//         left: -10px; 
-//         li{
-//           display: block;
-//           a {
-//             padding: 5px 15px;
-//           }
-//           .divider {
-//             margin: 7px 0;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+    .navbar-nav {
+      background: none;
+      padding-right: 5%;
+      li {
+        a {
+          font-size: 1.25em;
+        }
+      }
+      .dropdown-menu {
+        left: -10px; 
+        li{
+          display: block;
+          a {
+            padding: 5px 15px;
+          }
+          .divider {
+            margin: 7px 0;
+          }
+        }
+      }
+    }
+  }
+}
