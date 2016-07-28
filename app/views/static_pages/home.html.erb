@@ -31,3 +31,15 @@
 <div class="row" id="mail-signup">
   <%= link_to "Join our mailing list!", '#', class: "btn btn-lg" %>
 </div>
+
+
+<script>  
+$(document).ready(function() {  
+   $("#heading-carousel").swiperight(function() {  
+      $("heading-carousel").carousel('prev');  
+    });  
+   $("#heading-carousel").swipeleft(function() {  
+      $("#heading-carousel").carousel('next');  
+   });  
+});  
+</script> 
