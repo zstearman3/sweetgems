@@ -2,59 +2,68 @@
   z-index: -1;
 }
 
-#home-carousel {
-  height: 200px;
-  clear: both;
-}
-
 #mail-signup {
   text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 250px;
+  margin: 0 0;
 }
 /* THIS SECTION IS RESPONSIVE CSS FOR THE CAROUSEL HEIGHT
 HOPEFULLY ILL FIND A BETTER SOLUTION FOR THIS EVENTUALLY */
+
+@media screen and (min-width: 400px) {
+  #mail-signup {
+    top: 275px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  #mail-signup {
+    top: 325px;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  #mail-signup {
+    top: 360px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   #heading-carousel {
     position: absolute;
     top: 0px;
   }
-  #home-carousel {
-  height: 250px;
-  clear: both;
+  #mail-signup {
+    top: 310px;
   }
 }
 
 @media screen and (min-width: 1000px) {
-  #home-carousel {
-  height: 300px;
-  clear: both;
+  #mail-signup {
+    top: 375px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  #home-carousel {
-  height: 400px;
-  clear: both;
+  #mail-signup {
+    top: 435px;
   }
 }
 
 @media screen and (min-width: 1400px) {
-  #home-carousel {
-  height: 450px;
-  clear: both;
+#mail-signup {
+    top: 500px;
   }
 }
 
 @media screen and (min-width: 1600px) {
-  #home-carousel {
-  height: 500px;
-  clear: both;
+#mail-signup {
+    top: 600px;
   }
 }
 
 @media screen and (min-width: 1900px) {
-  #home-carousel {
-  height: 550px;
-  clear: both;
-  }
+
 }
