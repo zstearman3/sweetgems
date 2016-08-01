@@ -5,65 +5,56 @@
 #mail-signup {
   text-align: center;
   width: 100%;
-  position: absolute;
-  top: 250px;
-  margin: 0 0;
+  padding-top: 10px;
+  margin: 0 0 10px;
+
 }
 /* THIS SECTION IS RESPONSIVE CSS FOR THE CAROUSEL HEIGHT
 HOPEFULLY ILL FIND A BETTER SOLUTION FOR THIS EVENTUALLY */
 
-@media screen and (min-width: 400px) {
-  #mail-signup {
-    top: 275px;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  #mail-signup {
-    top: 325px;
-  }
-}
-
-@media screen and (min-width: 641px) {
-  #mail-signup {
-    top: 360px;
-  }
-}
 
 @media screen and (min-width: 768px) {
   #heading-carousel {
     position: absolute;
     top: 0px;
   }
-  #mail-signup {
-    top: 310px;
+  #home-carousel{
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  #home-carousel{
+    height: 235px;
   }
 }
 
 @media screen and (min-width: 1000px) {
-  #mail-signup {
-    top: 375px;
+  #home-carousel{
+    height: 290px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  #mail-signup {
-    top: 435px;
+  #home-carousel{
+    height: 355px;
   }
 }
 
 @media screen and (min-width: 1400px) {
-#mail-signup {
-    top: 500px;
+  #home-carousel{
+    height: 415px;
   }
 }
 
 @media screen and (min-width: 1600px) {
-#mail-signup {
-    top: 600px;
+  #home-carousel{
+    height: 460px;
   }
 }
 
-@media screen and (min-width: 1900px) {
-
+@media screen and (min-width: 1760px) {
+  #home-carousel{
+    height: 520px;
+  }
 }

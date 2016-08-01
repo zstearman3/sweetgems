@@ -1,0 +1,21 @@
+<footer class="footer">
+  <div class="footer-info">
+    <div class="social-icons">
+      <p>Let's be friends!</p>
+      <ul>
+        <li><%= link_to image_tag("twitter-wrap.png", alt: "Connect on twitter."), "http://www.twitter.com/zsspanther", class: 'social-icon' %></li>
+        <li><%= link_to image_tag("facebook-wrap.png", alt: "Connect on facebook."), "http://www.facebook.com/zach.stearman", class: 'social-icon' %></li>
+      </ul>
+    </div>
+    <nav>
+      <ul>
+        <li><%= link_to "Help", help_path %></li>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Contact", contact_path %></li>
+      </ul>
+    </nav>
+    <div class="copyright col-xs-4">
+        <small> &copy; <%= Time.now.year %> Zach Stearman </small>
+    </div>
+  </div>
+</footer>
