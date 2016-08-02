@@ -29,7 +29,12 @@
 </div>
 </div>
 <div class="row" id="mail-signup">
-  <%= link_to "Join our mailing list!", '#', class: "btn btn-lg" %>
+  <%= form_for(@user, url: root_url) do |f| %>
+    <%= render 'shared/error_messages' %>
+    
+    <%= f.text_field :email %>
+    <%= f.submit "Join our mailing list!", class: "btn btn-lg" %>
+  <% end %>
 </div>
 
 

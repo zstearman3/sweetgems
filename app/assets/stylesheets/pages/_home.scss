@@ -9,7 +9,12 @@
   margin: 0 0 10px;
   position: relative;
   z-index: 1;
-
+  .btn {
+    margin: 10px;
+  }
+  #user.email {
+    width: 30%;
+  }
 }
 
 /* THIS SECTION IS RESPONSIVE CSS FOR THE CAROUSEL HEIGHT

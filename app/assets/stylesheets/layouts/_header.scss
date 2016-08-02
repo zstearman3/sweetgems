@@ -31,6 +31,18 @@
   }
 }
 
+.alert {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.success {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
 @media screen and (min-width: 768px) {
   .header{
     background-color: gray;
