@@ -11,6 +11,7 @@
   z-index: 1;
 
 }
+
 /* THIS SECTION IS RESPONSIVE CSS FOR THE CAROUSEL HEIGHT
 HOPEFULLY ILL FIND A BETTER SOLUTION FOR THIS EVENTUALLY */
 
@@ -33,7 +34,7 @@ HOPEFULLY ILL FIND A BETTER SOLUTION FOR THIS EVENTUALLY */
 
 @media screen and (min-width: 1000px) {
   #home-carousel{
-    height: 290px;
+    height: 295px;
   }
 }
 
