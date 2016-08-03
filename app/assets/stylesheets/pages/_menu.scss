@@ -1,0 +1,33 @@
+.menu-content {
+  margin: 20px 20%;
+  .menu-header {
+    text-align: center;
+    margin: 0px auto;
+  }
+  .menu-item {
+    clear: both;
+    padding: 10px;
+  }
+  .menu-left {
+    .discription {
+      float: left;
+    }
+    .image-container {
+      float: right;
+    }
+  }
+  .menu-right {
+    .discription {
+      float: right;
+    }
+    .image-container {
+      float: left;
+    }
+  }
+  .image-container {
+    width: 200px;
+    img {
+      width: 200px;
+    }
+  }
+}
