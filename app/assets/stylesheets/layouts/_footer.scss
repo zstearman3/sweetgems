@@ -38,7 +38,6 @@ footer {
       list-style: none;
       padding: 10px 0;
       li {
-        display: inline-block;
         margin: 0 5px;
         padding-left: none;
         a {
@@ -94,8 +93,8 @@ footer {
         float: right;
         position: relative;
         width: 250px;
-        top: -25px;
-        left: 8px;
+        top: -20px;
+        left: -25px;
         padding-right: 0;
         clear: both;
         text-align: right;
@@ -110,9 +109,8 @@ footer {
         width: auto; 
         background: none;
         ul {
-          float: right;
+          padding-bottom: 0;
           li {
-            float: left;
             a {
               color: $gray;
               &:hover {
