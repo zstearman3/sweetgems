@@ -2,61 +2,50 @@ footer {
   clear: both;
   margin-top: 45px;
   padding-top: 15px;
-  color: #777;
   height: auto;
   overflow: hidden;
   h4 {
     text-align: center;
   }
-  .social-icons {
-    clear: both;
-    margin-bottom: 0;
-    ul{
-      text-align: center;
-      width: 100%;
-      padding-left: 0;
-      list-style: none;
-      border-bottom: 1px solid gray;
-      padding-bottom: 8px;
-      margin-bottom: 0;
-      li{
-        padding: 5px;
-        display: inline;
-        img{
-          width: 40px;
-          height: 40px;
-        }
-      }
-    }
-  }
-
-  nav{
+  .footer-info{
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 20px;
     text-align: center;
-    background-color: #FCEEA1;
-    ul {
+    background-color: $sg-blush;
+    .social-icons {
+      clear: both;
       margin-bottom: 0;
-      list-style: none;
-      padding: 10px 0;
-      li {
-        margin: 0 5px;
-        padding-left: none;
-        a {
-          color: #9d9d9d;
-          &:hover {
-            color: white;
+      background-color: $sg-blush;
+      color: $sg-periwinkle;
+      ul{
+        text-align: center;
+        width: 100%;
+        padding-left: 0;
+        list-style: none;
+        padding-bottom: 8px;
+        margin-bottom: 0;
+        li{
+          padding: 5px;
+          display: inline;
+          img{
+            width: 40px;
+            height: 40px;
           }
         }
       }
+      .fa-2x {
+        color: $sg-periwinkle;
+      }
     }
-  }
-  .copyright {
-    text-align: center;
-    width: 100%;
-    clear: both;
-    font-size: 1.0em;
-    background-color: #FCEEA1;
-    color: #9d9d9d;
-    padding-bottom: 10px;
+    .copyright {
+      text-align: center;
+      margin: auto;
+      clear: both;
+      font-size: 1.2em;
+      background: none;
+      color: #555;
+    }
   }
 }
 
@@ -74,11 +63,15 @@ footer {
     .footer-info{
       width: 65%;
       margin: 0 auto;
+      padding-top: 5px;
+      padding-bottom: 20px;
       text-align: center;
+      background-color: $sg-blush;
       .social-icons {
-        float: left;
         width: 225px;
         margin-bottom: 5px;
+        margin: auto;
+        color: $sg-periwinkle;
         ul{
           border-bottom: none;
           margin-bottom: auto;
@@ -88,37 +81,17 @@ footer {
             height: 25px;
           }
         }
+        .fa-2x {
+          color: $sg-periwinkle;
+        }
       }
       .copyright {
-        float: right;
-        position: relative;
-        width: 250px;
-        top: -20px;
-        left: -25px;
-        padding-right: 0;
+        text-align: center;
+        margin: auto;
         clear: both;
-        text-align: right;
         font-size: 1.2em;
-        margin-top: -15px;
         background: none;
         color: #555;
-      }
-      nav {
-        float: right;
-        clear: none;
-        width: auto; 
-        background: none;
-        ul {
-          padding-bottom: 0;
-          li {
-            a {
-              color: $gray;
-              &:hover {
-              color: $gray-darker;
-              }
-            }
-          }
-        }
       }
     }
   }
