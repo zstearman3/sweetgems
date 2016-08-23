@@ -1,0 +1,28 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3273625, 2016-08-23T14:13:30-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: MuseoSlab-300 by exljbris
+ * URL: http://www.myfonts.com/fonts/exljbris/museo-slab/300/
+ * Copyright: Copyright (c) 2009 by Jos Buivenga. All rights reserved.
+ * Licensed pageviews: 500,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3273625
+ * 
+ * © 2016 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/31f399");
+
+  
+@font-face {font-family: 'MuseoSlab-300';src: url('webfonts/31F399_0_0.eot');src: url('webfonts/31F399_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/31F399_0_0.woff2') format('woff2'),url('webfonts/31F399_0_0.woff') format('woff'),url('webfonts/31F399_0_0.ttf') format('truetype');}
+ 
