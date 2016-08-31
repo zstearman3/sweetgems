@@ -42,13 +42,28 @@
   text-align: center;
   p {
     font-size: 1.5em;
+    padding-bottom: 20px;
   }
 }
 .disclaimers {
+  padding-top: 30px;
   text-align: center;
   p {
     clear: both;
     font-size: 1.1em;
+  }
+  .small {
+    font-size: 0.8em;
+    clear: both;
+  }
+}
+.email-signup {
+  overflow: auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  #user_email {
+    width: 50%;
   }
 }
 

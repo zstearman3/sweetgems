@@ -7,10 +7,10 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       flash[:success] = "Thank you for signing up! "
-      redirect_to root_url
+      redirect_to menu_path
     else
       flash[:danger] = "Uh, oh! Something went wrong!"
-      redirect_to root_url
+      redirect_to menu_path
     end
   end
   

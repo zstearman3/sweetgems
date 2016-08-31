@@ -1,3 +1,7 @@
 .btn {
-  background-color: #FCEEA1;
+  background-color: $sg-lavendar;
+  color: #fff;
+  &:hover {
+    color: $sg-light-grey;
+  }
 }

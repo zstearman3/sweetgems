@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   get    '/contact',  to: 'static_pages#contact'
   get    '/menu',     to: 'static_pages#menu'
   get    '/blog',     to: 'static_pages#blog'
-  post   '/',         to: 'users#create'
+  post   '/menu',     to: 'users#create'
 end
