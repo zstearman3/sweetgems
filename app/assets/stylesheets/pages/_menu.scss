@@ -32,10 +32,23 @@
   overflow: auto;
   border: 3px solid $sg-blush;
   .photo {
-    padding: 20px;
+    padding: 7px 7px;
     img {
       max-width: 100%;
     }
+  }
+}
+.price {
+  text-align: center;
+  p {
+    font-size: 1.5em;
+  }
+}
+.disclaimers {
+  text-align: center;
+  p {
+    clear: both;
+    font-size: 1.1em;
   }
 }
 
@@ -65,6 +78,11 @@
       img {
         max-width: 100%;
       }
+    }
+  }
+  .disclaimers {
+    p {
+      font-size: 1.6em;
     }
   }
 }
