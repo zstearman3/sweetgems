@@ -36,23 +36,3 @@
   <!--</a>-->
 </div>
 </div>
-<div class="row" id="mail-signup">
-  <%= form_for(@user, url: root_url) do |f| %>
-    <%= render 'shared/error_messages' %>
-    
-    <%= f.text_field :email %>
-    <%= f.submit "Join our mailing list!", class: "btn btn-lg" %>
-  <% end %>
-</div>
-
-
-<script>  
-$(document).ready(function() {  
-   $("#heading-carousel").swiperight(function() {  
-      $("heading-carousel").carousel('prev');  
-    });  
-   $("#heading-carousel").swipeleft(function() {  
-      $("#heading-carousel").carousel('next');  
-   });  
-});  
-</script> 

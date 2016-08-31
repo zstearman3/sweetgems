@@ -1,5 +1,6 @@
 #heading-carousel {
-  z-index: 1;
+  width: 90%;
+  margin: auto;
 }
 
 #mail-signup {
@@ -22,10 +23,6 @@ HOPEFULLY ILL FIND A BETTER SOLUTION FOR THIS EVENTUALLY */
 
 
 @media screen and (min-width: 768px) {
-  #heading-carousel {
-    position: absolute;
-    top: 0px;
-  }
   #home-carousel{
     height: 280px;
   }
