@@ -1,12 +1,13 @@
 footer {
   clear: both;
-  margin-top: 45px;
-  padding-top: 15px;
-  color: #777;
+  margin-top: 25px;
+  background-color: $sg-light-grey;
   height: auto;
   overflow: hidden;
+  text-align: center;
   h4 {
     text-align: center;
+    color: $sg-periwinkle;
   }
   .social-icons {
     clear: both;
@@ -16,9 +17,11 @@ footer {
       width: 100%;
       padding-left: 0;
       list-style: none;
-      border-bottom: 1px solid gray;
-      padding-bottom: 8px;
+      padding-bottom: 5px;
       margin-bottom: 0;
+      .fa-2x {
+        color: $sg-periwinkle;
+      }
       li{
         padding: 5px;
         display: inline;
@@ -29,97 +32,21 @@ footer {
       }
     }
   }
-
-  nav{
-    text-align: center;
-    background-color: #FCEEA1;
-    ul {
-      margin-bottom: 0;
-      list-style: none;
-      padding: 10px 0;
-      li {
-        margin: 0 5px;
-        padding-left: none;
-        a {
-          color: #9d9d9d;
-          &:hover {
-            color: white;
-          }
-        }
-      }
-    }
-  }
-  .copyright {
+  small {
     text-align: center;
     width: 100%;
+    margin: auto;
     clear: both;
-    font-size: 1.0em;
-    background-color: #FCEEA1;
-    color: #9d9d9d;
+    font-size: 0.9em;
+    color: $sg-lavendar;
     padding-bottom: 10px;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .copyright {
-    font-size: 1.2em;
   }
 }
 
 @media screen and (min-width: 768px) {
   footer {
-    margin: 45px 0 0;
-    padding-top: 5px;
-    border-top: 1px solid #FCEEA1;
-    .footer-info{
-      width: 65%;
-      margin: 0 auto;
-      text-align: center;
-      .social-icons {
-        float: left;
-        width: 225px;
-        margin-bottom: 5px;
-        ul{
-          border-bottom: none;
-          margin-bottom: auto;
-          padding-bottom: auto;
-          img{
-            width: 25px;
-            height: 25px;
-          }
-        }
-      }
-      .copyright {
-        float: right;
-        position: relative;
-        width: 250px;
-        top: -20px;
-        left: -25px;
-        padding-right: 0;
-        clear: both;
-        text-align: right;
-        font-size: 1.2em;
-        margin-top: -15px;
-        background: none;
-        color: #555;
-      }
-      nav {
-        float: right;
-        clear: none;
-        width: auto; 
-        background: none;
-        ul {
-          padding-bottom: 0;
-          li {
-            a {
-              color: $gray;
-              &:hover {
-              color: $gray-darker;
-              }
-            }
-          }
-        }
-      }
-    }
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
   }
 }
