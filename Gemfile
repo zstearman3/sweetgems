@@ -20,10 +20,9 @@ gem "font-awesome-rails"
 
 group :development, :test do
   gem 'byebug'
-  gem 'rspec-rails',              '~> 3.5.0
-  '
+  gem 'rspec-rails',              '~> 3.5.0'
   gem 'capybara',                 '~> 2.7.1'
-  gem 'factory_girl_rails',       '~> 4.0'
+  gem 'factory_girl_rails'
 end
 
 group :development do
