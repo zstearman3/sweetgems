@@ -13,7 +13,7 @@ class StaticPagesController < ApplicationController
   end
   
   def menu
-    @user = User.new
+    @user ||= User.new
   end
   
   def blog

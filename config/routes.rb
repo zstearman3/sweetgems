@@ -10,4 +10,8 @@ Rails.application.routes.draw do
   get    '/menu',     to: 'static_pages#menu'
   get    '/blog',     to: 'static_pages#blog'
   post   '/menu',     to: 'users#create'
+  get    '/signup',   to: 'users#new'
+  post   '/signup',   to: 'users#create'
+  resources :admins, only: [:index]
+  resources :users
 end
