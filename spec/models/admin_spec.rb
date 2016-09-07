@@ -3,7 +3,8 @@ require 'rails_helper'
 RSpec.describe Admin, type: :model do
   describe "validate admin" do
     before :each do
-      @admin = Admin.new(name: "Example User", email: "user@example.com")
+      @admin = Admin.new(name: "Example User", email: "user@example.com",
+                         password: "foobar", password_confirmation: "foobar")
     end
     it "should be valid Admin" do
       expect(@admin.valid?).to be_truthy
@@ -43,6 +44,14 @@ RSpec.describe Admin, type: :model do
       @admin.email = mixed_case_email
       @admin.save
       expect(@admin.reload.email).to eq(mixed_case_email.downcase)
+    end
+    it "should not allow a blank password" do
+      @admin.password = @admin.password_confirmation = " " * 6
+      expect(@admin.valid?).to be false
+    end
+    it "should not allow a password shorter than 6 characters" do
+      @admin.password = @admin.password_confirmation = "a" * 5
+      expect(@admin.valid?).to be false
     end
   end
 end
