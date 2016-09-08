@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+
   get 'admins/new'
 
   get 'users/new'
@@ -12,6 +14,9 @@ Rails.application.routes.draw do
   post   '/menu',     to: 'users#create'
   get    '/signup',   to: 'users#new'
   post   '/signup',   to: 'users#create'
+  get    '/admin',    to: 'sessions#new'
+  post   '/admin',    to: 'sessions#create'
+  delete '/logout',   to: 'sessoins#destroy'
   resources :admins, only: [:index]
   resources :users
 end
