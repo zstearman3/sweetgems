@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   post   '/signup',   to: 'users#create'
   get    '/admin',    to: 'sessions#new'
   post   '/admin',    to: 'sessions#create'
-  delete '/logout',   to: 'sessoins#destroy'
+  delete '/logout',   to: 'sessions#destroy'
   resources :admins, only: [:index]
   resources :users
 end

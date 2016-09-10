@@ -47,7 +47,8 @@
     width: 90%;
     margin: auto;
     clear: both;
-    overflow: auto;
+    overflow: inherit;
+    height: 185px;
     padding-bottom: 5px;
     position: relative;
     .logo-container {
@@ -60,10 +61,17 @@
     }
     .navbar {
       width: 70%;
-      position: absolute;
+      float: right;
       font-size: 1.2em;
       right: 0;
-      bottom: 0;
+      top: 132px;
+      ul {
+        ul{
+          li {
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }
