@@ -8,6 +8,12 @@ feature "Admin Login" do
     visit root_url
     
     expect(page).to_not have_content("Invalid email/password combination")
+  end
+  
+  scenario "With valid information" do
+    log_in_with("admin@example.com", "password")
+    
+    expect(page).to have_content("Welcome, Test User!")
     expect(page).to have_link("users")
   end
   
