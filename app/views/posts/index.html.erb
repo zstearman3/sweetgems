@@ -1,6 +1,6 @@
 <% provide(:title, 'Blog') %>
-<div class="blog-content col-xs-10 col-xs-offset-1">
-  <h1>Sweet Gems Blog</h1>
+<!--<h1 class="page-header">Sweet Gems Blog</h1>-->
+<div class="blog-content col-sm-5 col-sm-offset-2">
   
   <%= will_paginate %>
   
@@ -8,5 +8,39 @@
     <% @posts.each do |post| %>
       <%= render post %>
     <% end %>
+  </div>
+</div>
+<div class="blog-sidebar col-sm-2 col-sm-offset-1">
+  <div id="about-me">
+    <img src="https://secure.gravatar.com/avatar/266780f8c0a7d8863634023a82201198?s=320" width="100%"></img>
+    <h2>Meg Stearman</h2>
+    <p>Geologist by day, macaron baker by night!</p>
+    <%= link_to "Learn more about me!", about_path %>
+  </div>
+  <div id="social-share">
+    <h4>Share my blog!</h4>
+    <ul>
+      <li><a target="_blank" href="http://twitter.com/share?text=Look%20at%20the%20Sweet%20Gems%20Blog!
+      &url=http://sweetgemshtx.com/blog"><i class="fa fa-2x fa-twitter"></i></a></li>
+      <li><a target="_blank" href="https://www.facebook.com/sweetgemshtx"><i class="fa fa-2x fa-facebook"></i></a></li>
+      <li><a target="_blank" href="https://www.instagram.com/sweetgems_htx"><i class="fa fa-2x fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa fa-2x fa-pinterest"></i></a></li>
+    </ul>
+  </div>
+  <div id="email-signup">
+    <%= form_for(@user, url: blog_path) do |f| %>
+      <%= render 'shared/error_messages' %>
+      
+      <%= f.email_field :email, class: 'form-field' %>
+      <%= f.submit "Sign up for email updates", class: "btn" %>
+    <% end %>
+  </div>
+  <div id="recent-posts">
+    <h4>Recent Blog Posts</h4>
+    <ol>
+      <% @posts.take(5).each do |post| %>
+        <li><%= link_to post.title, post %></li>
+      <% end %> 
+    </ol>
   </div>
 </div>

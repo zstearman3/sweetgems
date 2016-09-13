@@ -1,0 +1,54 @@
+.blog-sidebar {
+  padding: 10px;
+  #about-me {
+    padding: 40px 0 20px;
+    border-bottom: 1px solid #999;
+    img {
+      max-width: 350px;
+    }
+  }
+  #social-share {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #999;
+    h4 {
+      margin: 20px 0 10px;
+    }
+    clear: both;
+    margin-bottom: 0;
+    ul{
+      width: 100%;
+      padding-left: 0;
+      list-style: none;
+      padding-bottom: 5px;
+      margin-bottom: 0;
+      .fa-2x {
+        color: $sg-lavendar;
+      }
+      li{
+        padding: 5px;
+        display: inline;
+        img{
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+  #email-signup {
+    padding: 20px 0;
+    border-bottom: 1px solid #999;
+    .btn{
+      margin-top: 10px;
+    }
+  }
+  #recent-posts {
+    padding: 20px 0;
+    ol {
+      list-style: none;
+      padding: 0;
+      li {
+        padding: 5px 0;
+      }
+    }
+  }
+}
