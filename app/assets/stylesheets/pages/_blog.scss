@@ -1,7 +1,10 @@
 .blog-content {
   margin-bottom: 50px;
-  text-align: center;
   h1 {
+    text-align: center;
     margin-bottom: 20px;
-  }  
+  }
+  p {
+      font-size: (1.1em !important);
+  }
 }

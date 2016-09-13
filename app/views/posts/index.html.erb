@@ -1,0 +1,12 @@
+<% provide(:title, 'Blog') %>
+<div class="blog-content col-xs-8 col-xs-offset-2">
+  <h1>Sweet Gems Blog</h1>
+  
+  <%= will_paginate %>
+  
+  <div class="blog-posts">
+    <% @posts.each do |post| %>
+      <%= render post %>
+    <% end %>
+  </div>
+</div>
