@@ -71,7 +71,7 @@
     <%= form_for(@user, url: menu_path) do |f| %>
       <%= render 'shared/error_messages' %>
       
-      <%= f.email_field :email, class: 'form-field' %>
+      <%= f.email_field :email, class: 'form-field', :placeholder => "your@email.com" %>
       <%= f.submit "Join", class: "btn btn-lg" %>
     <% end %>
     <p>Join our mailing list to keep up to date with our latest flavors and news!</p>

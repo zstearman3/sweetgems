@@ -31,7 +31,7 @@
     <%= form_for(@user, url: blog_path) do |f| %>
       <%= render 'shared/error_messages' %>
       
-      <%= f.email_field :email, class: 'form-field' %>
+      <%= f.email_field :email, class: 'form-field', :placeholder => "your@email.com" %>
       <%= f.submit "Sign up for email updates", class: "btn" %>
     <% end %>
   </div>
