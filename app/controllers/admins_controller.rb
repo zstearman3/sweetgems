@@ -10,10 +10,4 @@ class AdminsController < ApplicationController
   end
   
   private
-  
-    def logged_in_admin
-      unless logged_in?
-        redirect_to root_url
-      end
-    end
 end

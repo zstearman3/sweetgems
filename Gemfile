@@ -15,7 +15,8 @@ gem 'sass-rails', '~> 5.0.6'
 gem 'uglifier', '>= 1.3.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'sprockets', '3.6.3'
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
+gem 'tinymce-rails'
 
 
 group :development, :test do

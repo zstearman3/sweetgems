@@ -1,0 +1,13 @@
+.new-post {
+  label {
+    margin-top: 15px;
+  }
+  input {
+    width: 100%;
+  }
+  .mce-tinymce {
+    .mce-edit-area {
+      height: 500px;
+    }
+  }
+}

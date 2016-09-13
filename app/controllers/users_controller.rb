@@ -32,10 +32,5 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:name, :email)
     end
-    
-    def logged_in_admin
-      unless logged_in?
-        redirect_to root_url
-      end
-    end
+  
 end

@@ -1,0 +1,19 @@
+<% provide(:title, 'New Blog Post') %>
+<h1>New Blog Post</h1>
+
+<div class="row new-post">
+  <div class="col-md-10 col-md-offset-1">
+    <%= form_for(@post, url: write_path) do |f| %>
+    
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+
+      <%= f.label :content %>
+      <%= f.text_area :content, class: "tinymce" %>
+
+      <%= f.submit "Create Post", class: "btn btn-lg" %>
+    <% end %>
+  </div>
+</div>
+
+<%= tinymce %>
