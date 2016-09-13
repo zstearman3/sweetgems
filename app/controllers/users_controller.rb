@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       flash[:success] = "Thank you for signing up! "
-      redirect_to menu_path
+      redirect_to :back
     else
       error_script = ""
       @user.errors.full_messages.each do |msg|
@@ -23,7 +23,7 @@ class UsersController < ApplicationController
       else
         flash[:danger] = "Uh, oh! Something went wrong!"
       end
-      redirect_to menu_path
+      redirect_to :back
     end
   end
   
