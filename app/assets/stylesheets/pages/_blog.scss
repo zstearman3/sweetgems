@@ -4,13 +4,24 @@
     text-align: center;
     margin-bottom: 20px;
   }
-  p {
-      font-size: (1.1em !important);
+  .blog-posts {
+    margin-top: 40px;
+    p {
+        font-size: (1.1em !important);
+    }
+    h2 {
+      font-size: 20px !important;
+    }
   }
 }
 
 @media screen and (min-width: 768px) {
   .blog-content {
-     padding: 0 5%;
+    padding: 0 10%;
+    .blog-posts {
+      h2 {
+        font-size: 30px !important;
+      }
+    }
   } 
 }
