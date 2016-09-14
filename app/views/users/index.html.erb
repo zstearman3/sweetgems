@@ -1,0 +1,11 @@
+<% provide(:title, 'Blog') %>
+<h1 class="page-header">Email List</h1>
+<div class="users-content col-sm-10 col-sm-offset-1">
+  
+  <ul class="user-list">
+    <% @users.each do |user| %>
+      <%= render user %>
+    <% end %>
+  </ul>
+  
+</div>
