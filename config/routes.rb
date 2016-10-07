@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get    '/write',     to: 'posts#new'
   post   '/write',     to: 'posts#create'
   post   '/blog',      to: 'users#create'
+  get    '/order',     to: 'orders#new'
   resources :admins, only: [:index]
   resources :users
   resources :posts

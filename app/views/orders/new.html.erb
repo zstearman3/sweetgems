@@ -1,2 +1,23 @@
+<% provide(:title, 'Create Order') %>
+
 <h1>Orders#new</h1>
-<p>Find me in app/views/orders/new.html.erb</p>
+
+<div class="row order-form">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@order) do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+      
+      <%= f.label :email %>
+      <%= f.email_field :email %>
+      
+      <%= f.label :phone %>
+      <%= f.telephone_field :phone %>
+      
+      <%= f.label :order %>
+      <%= f.text_area :order, size: "50x10" %>
+      
+      <%= f.submit "Place my order!", class: "btn" %>
+    <% end %>
+  </div>
+</div>
