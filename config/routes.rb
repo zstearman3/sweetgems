@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'orders/new'
+
   get 'sessions/new'
 
   get 'admins/new'
@@ -23,4 +25,5 @@ Rails.application.routes.draw do
   resources :admins, only: [:index]
   resources :users
   resources :posts
+  resources :orders
 end
