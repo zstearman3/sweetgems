@@ -18,6 +18,10 @@
       margin-top: 10px;
       padding: 10px;
     }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -26,10 +30,6 @@
     .blog-posts {
       h2 {
         font-size: 30px !important;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
       }
     }
   } 
