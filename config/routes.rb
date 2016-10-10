@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   post   '/write',     to: 'posts#create'
   post   '/blog',      to: 'users#create'
   get    '/order',     to: 'orders#new'
+  get    '/order-confirmation', to: 'orders#confirmation'
   resources :admins, only: [:index]
   resources :users
   resources :posts

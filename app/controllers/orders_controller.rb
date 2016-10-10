@@ -11,7 +11,7 @@ class OrdersController < ApplicationController
   def create
     @order = Order.new(order_params)
     if @order.save
-      redirect_to static_pages/confirmation
+      redirect_to "/order-confirmation"
     else
       render 'new'
     end
