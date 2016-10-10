@@ -1,4 +1,5 @@
 class OrdersController < ApplicationController
+  before_action :logged_in_admin, only: [:edit, :update, :destroy, :index]
   
   def show
     @order = Order.find(params[:id])
@@ -18,8 +19,8 @@ class OrdersController < ApplicationController
     end
   end
   
-  def show
-    @order = Order.find(params[:id])
+  def index
+    @orders = Order.all
   end
   
   private

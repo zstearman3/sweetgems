@@ -1,0 +1,12 @@
+<% provide(:title, 'Orders') %>
+<div class="title"><h1>Current Orders</h1></div>
+
+<div class="col-sm-8 col-sm-offset-2">
+  <ul class="current-orders">
+    <% @orders.each do |order| %>
+      <% if !order.is_completed? %>
+        <li> <%= 'Customer: ' + link_to(order.name, order) + " --- Placed On: " + order.created_at.to_date.to_formatted_s(:long_ordinal) %></li>
+      <% end %>
+    <% end %>
+  </ul>
+</div>
