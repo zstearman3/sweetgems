@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'orders/new'
+
   get 'sessions/new'
 
   get 'admins/new'
@@ -20,7 +22,10 @@ Rails.application.routes.draw do
   get    '/write',     to: 'posts#new'
   post   '/write',     to: 'posts#create'
   post   '/blog',      to: 'users#create'
+  get    '/new-order',     to: 'orders#new'
+  post   '/new-order',     to: 'orders#create'
   resources :admins, only: [:index]
   resources :users
   resources :posts
+  resources :orders
 end

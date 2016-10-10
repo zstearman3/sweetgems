@@ -1,0 +1,33 @@
+<% provide(:title, 'Create Order') %>
+
+<div class="title col-sm-6 col-sm-offset-3" >
+  <h1>Create Order</h1>
+  <p>
+    Please fill out the form below to place your order! There is a minimum order
+    of one dozen items per flavor. Orders typically require five days notice. Currently, 
+    we are only able to fulfill orders from the Houston area.
+  </p>
+</div>
+
+
+<div class="row order-form">
+  <div class="col-sm-6 col-sm-offset-3">
+    <%= form_for(@order) do |f| %>
+      <%= render 'shared/order_error_messages' %>
+      
+      <%= f.label :name %>
+      <%= f.text_field :name, placeholder: "Your Name", class: 'form-control' %>
+      
+      <%= f.label :email %>
+      <%= f.email_field :email, placeholder: "your@email.com", class: 'form-control' %>
+      
+      <%= f.label :phone %>
+      <%= f.telephone_field :phone, placeholder: "555-555-5555", class: 'form-control' %>
+      
+      <%= f.label "Order" %>
+      <%= f.text_area :details, size: "50x10", placeholder: "Describe your order here! We will email you to confirm all of the details.", class: 'form-control' %>
+      
+      <%= f.submit "Place my order!", class: "btn" %>
+    <% end %>
+  </div>
+</div>

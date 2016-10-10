@@ -1,8 +1,18 @@
+<div class="menu-header">
+  <h1>Our Menu</h1>
+  <p>Sweet Gems offers a variety of flavors which can be made into either French
+  Macarons or cupcakes! Each of the flavors is named after an interesting piece of
+  geology that it reminds us of. With each order, you will recieve a note card
+  about the flavor that you chose and the geology behind its name! <a href="#">Order now!</a></p>
+  <div class="row prices">
+    <p class="col-xs-6"><b>French Macarons: $25/dozen</b></p>
+    <p class="col-xs-6"><b>Cupcakes: $22/dozen</b></p>    
+  </div>
+</div>
 <div class="monthly-flavor">
-  <%= image_tag("FlavorOfTheMonth_Web.jpg", :alt => "Flavor of the Month: Lemon Olive Oil") %>
+  <%= image_tag("FlavorOfTheMonth_Web.jpg", :alt => "Flavor of the Month: Pumpkin Pie") %>
 </div>
 <div class="menu-content">
-  <h1 class="menu-header">Flavors</h1>
   <div class="menu">
     <div class="col-xs-6 col-md-6">
       <div class="menu-item">
@@ -65,41 +75,21 @@
       </div>
     </div> 
   </div>
+  <a href="/new-order" class="btn btn-lg order-btn">Order Now!</a>
 </div>
+
 <div class="menu-photos">
-  <div class="photo col-xs-4">
-    <%= image_tag("blueberry-square.jpg", :alt => "Blueberry") %>
-  </div>
-  <div class="photo col-xs-4">
-    <%= image_tag("pebble-square.jpg", :alt => "Fruity Pebbles") %>
-  </div>
-  <div class="photo col-xs-4">
-    <%= image_tag("caramel-square.jpg", :alt => "Salted Caramel") %>
-  </div>
+
 </div>
-<div class="price col-xs-6">
-  <h1>Macarons</h1>
-  <p>$25/dozen</p>
-</div>
-<div class="price col-xs-6">
-  <h1>Cupcakes</h1>
-  <p>$22/dozen</p>
-</div>
-<div class = "disclaimers">
-  <p>Email Meg at <%= link_to "meg@sweetgemshtx.com", "mailto:meg@sweetgemshtx.com" %> to order now!</p>
-  <p>Other flavors and special orders by request!</p>
-  <p class="small">*Minimum one dozen per flavor*</p>
-  <p class="small">*Orders require five days notice*</p>
-  <p class="small">*Must be in the Houston area*</p>
-</div>
+
 <div class = "email-signup">
   <div class="col-md-6 col-md-offset-3">
+    <p>Join our mailing list to keep up to date with our latest flavors and news!</p>
     <%= form_for(@user, url: menu_path) do |f| %>
       <%= render 'shared/error_messages' %>
       
       <%= f.email_field :email, class: 'form-field', :placeholder => "your@email.com" %>
       <%= f.submit "Join", class: "btn btn-lg" %>
     <% end %>
-    <p>Join our mailing list to keep up to date with our latest flavors and news!</p>
   </div>
 </div>

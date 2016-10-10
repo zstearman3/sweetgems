@@ -1,5 +1,16 @@
+.menu-header {
+  width: 80%;
+  margin: auto;
+  clear: both;
+  h1, p {
+    text-align: center;
+  }
+  p{
+    margin-top: 20px;
+  }
+}
 .monthly-flavor{
-  margin-top: 20px;
+  margin-top: 5px;
   width: 100%;
   text-align: center;
   img {
@@ -12,7 +23,7 @@
   margin: auto;
   overflow: auto;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 20px auto;
   h1 {
     text-align: center;
   }
@@ -25,38 +36,43 @@
     }
   }
 }
-.menu-photos {
-  width: 90%;
-  margin: auto;
-  margin-bottom: 25px;
-  overflow: auto;
-  border: 3px solid $sg-blush;
-  .photo {
-    padding: 7px 7px;
-    img {
-      max-width: 100%;
-    }
-  }
-}
-.price {
+.order-btn {
+  width: 200px;
+  margin: 15px auto;
   text-align: center;
-  p {
-    font-size: 1.5em;
-    padding-bottom: 20px;
-  }
 }
-.disclaimers {
-  padding-top: 30px;
-  text-align: center;
-  p {
-    clear: both;
-    font-size: 1.1em;
-  }
-  .small {
-    font-size: 0.8em;
-    clear: both;
-  }
-}
+// .menu-photos {
+//   width: 90%;
+//   margin: auto;
+//   margin-bottom: 25px;
+//   overflow: auto;
+//   border: 3px solid $sg-blush;
+//   .photo {
+//     padding: 7px 7px;
+//     img {
+//       max-width: 100%;
+//     }
+//   }
+// }
+// .price {
+//   text-align: center;
+//   p {
+//     font-size: 1.5em;
+//     padding-bottom: 20px;
+//   }
+// }
+// .disclaimers {
+//   padding-top: 30px;
+//   text-align: center;
+//   p {
+//     clear: both;
+//     font-size: 1.1em;
+//   }
+//   .small {
+//     font-size: 0.8em;
+//     clear: both;
+//   }
+// }
 .email-signup {
   overflow: auto;
   text-align: center;
@@ -68,8 +84,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .menu-header {
+    width: 50%;
+  }
   .monthly-flavor{
-    margin-top: 30px;
     img {
       width: 50%; 
     }
