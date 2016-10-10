@@ -13,7 +13,7 @@ class OrdersController < ApplicationController
     @order = Order.new(order_params)
     if @order.save
       OrderMailer.new_order(@order).deliver_now
-      redirect_to @order
+      redirect_to "/order-confirmation"
     else
       render 'new'
     end
