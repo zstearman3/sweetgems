@@ -14,7 +14,7 @@
             <td><%= link_to order.name, order %></td>
             <td><%= order.created_at.to_date.to_formatted_s(:long_ordinal) %></td>
             <td><%= order.is_completed %></td>
-            <td><%= link_to 'edit', '#' %></td>
+            <td><%= link_to 'edit', edit_order_path(order) %></td>
           </tr>
       <% end %>
     <% end %>

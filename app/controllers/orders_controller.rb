@@ -23,17 +23,23 @@ class OrdersController < ApplicationController
     @orders = Order.all
   end
   
-  def edit_individual
-    
+  def edit
+    @order = Order.find(params[:id])
   end
   
-  def update_individual
-    
+  def update
+    @order = Order.find(params[:id])
+    if @order.update_attributes(order_params)
+      flash[:success] = "Order Updated!"
+      redirect_to '/orders'
+    else
+      render 'edit'
+    end
   end
   
   private
   
     def order_params
-      params.require(:order).permit(:name, :email, :phone, :details)
+      params.require(:order).permit(:name, :email, :phone, :details, :is_completed)
     end
 end
