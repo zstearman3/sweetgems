@@ -10,12 +10,12 @@
     </tr>
     <% @orders.each do |order| %>
       <% if !order.is_completed? %>
-        <%= form_for order do |f| %>
           <tr>
             <td><%= link_to order.name, order %></td>
             <td><%= order.created_at.to_date.to_formatted_s(:long_ordinal) %></td>
+            <td><%= order.is_completed %></td>
+            <td><%= link_to 'edit', '#' %></td>
           </tr>
-        <% end %>
       <% end %>
     <% end %>
   </table>
