@@ -6,15 +6,38 @@
     <tr>
       <th>Customer</th>
       <th>Date Placed</th>
-      <th>Completed?</th>
+      <th>Details</th>
     </tr>
     <% @orders.each do |order| %>
       <% if !order.is_completed? %>
           <tr>
             <td><%= link_to order.name, order %></td>
             <td><%= order.created_at.to_date.to_formatted_s(:long_ordinal) %></td>
-            <td><%= order.is_completed %></td>
+            <td><%= order.details.truncate(50) %></td>
             <td><%= link_to 'edit', edit_order_path(order) %></td>
+            <td><%= link_to 'delete', order, method: :delete, 
+                                             data: {confirm: "Are you sure?"} %></td>
+          </tr>
+      <% end %>
+    <% end %>
+  </table>
+  
+  <div class="title"><h1>Completed Orders</h1></div>
+  <table class="table table-striped table-bordered">
+    <tr>
+      <th>Customer</th>
+      <th>Date Placed</th>
+      <th>Details</th>
+    </tr>
+    <% @orders.each do |order| %>
+      <% if order.is_completed? %>
+          <tr>
+            <td><%= link_to order.name, order %></td>
+            <td><%= order.created_at.to_date.to_formatted_s(:long_ordinal) %></td>
+            <td><%= order.details.truncate(50) %></td>
+            <td><%= link_to 'edit', edit_order_path(order) %></td>
+            <td><%= link_to 'delete', order, method: :delete, 
+                                             data: {confirm: "Are you sure?"} %></td>
           </tr>
       <% end %>
     <% end %>
