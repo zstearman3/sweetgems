@@ -23,6 +23,14 @@ class OrdersController < ApplicationController
     @orders = Order.all
   end
   
+  def edit_individual
+    
+  end
+  
+  def update_individual
+    
+  end
+  
   private
   
     def order_params
