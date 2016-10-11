@@ -27,6 +27,20 @@ class PostsController < ApplicationController
     @user ||= User.new
   end
   
+  def edit
+    @post = Post.find(params[:id])
+  end
+  
+  def update
+    @post = Post.find(params[:id])
+    if @post.update_attributes(blog_params)
+      flash[:success] = "Post Updated!"
+      redirect_to '/blog'
+    else
+      render 'edit'
+    end
+  end
+  
   private
     def blog_params
       params.require(:post).permit(:title, :content)

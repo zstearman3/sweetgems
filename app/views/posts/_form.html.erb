@@ -1,0 +1,10 @@
+<%= form_for(@post) do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :content %>
+  <%= f.text_area :content, class: "tinymce" %>
+
+  <%= f.submit yield(:button_text), class: "btn btn-lg" %>
+<% end %>

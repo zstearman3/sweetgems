@@ -1,6 +1,9 @@
 <div class="post">
   <h2><%= post.title %></h2>
   <small><%= post.created_at.to_date.to_formatted_s(:long_ordinal) %></small>
+  <% if logged_in? %>
+  <%= link_to 'edit', edit_post_path(post) %>
+  <% end %>
   <div class="post-body"><%= post.content.html_safe %></div>
   <%= link_to "Full Post", post %>
 </div>
