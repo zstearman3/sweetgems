@@ -1,8 +1,6 @@
 # Place all the behaviors and hooks related to the matching controller here.
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
-$(document).on "turbolinks:load", ->
-  console.log('Facebook comment only works on refresh')
   ((d, s, id) ->
     js = undefined
     fjs = d.getElementsByTagName(s)[0]
@@ -14,3 +12,4 @@ $(document).on "turbolinks:load", ->
     fjs.parentNode.insertBefore js, fjs
     return
   ) document, 'script', 'facebook-jssdk'
+  console.log('Facebook comment only works on refresh')
