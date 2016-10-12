@@ -17,6 +17,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'sprockets', '3.6.3'
 gem 'font-awesome-rails'
 gem 'tinymce-rails'
+gem 'jquery-turbolinks'
 
 
 group :development, :test do
