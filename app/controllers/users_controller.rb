@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-   before_action :logged_in_admin, only: [:index, :edit, :update]
+   before_action :logged_in_admin, only: [:index, :edit, :update, :destroy]
    def new
      @user = User.new
    end
@@ -27,6 +27,11 @@ class UsersController < ApplicationController
      end
    end
    
+   def destroy
+    User.find(params[:id]).destroy
+    flash[:success] = "Order deleted"
+    redirect_to '/users'
+   end
    private
      
      def user_params

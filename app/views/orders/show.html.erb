@@ -6,4 +6,8 @@
   <p><strong>Email: </strong><%= @order.email %></p> 
   <p><strong>Phone Number: </strong><%= @order.phone %></p>
   <p><strong>Details: </strong><%= @order.details %></p>
+  <p><%= link_to 'edit', edit_order_path(@order) %> |
+  <%= link_to 'delete', @order, method: :delete, 
+                        data: {confirm: "Are you sure?"} %></p>
+
 </div>

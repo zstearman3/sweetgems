@@ -25,7 +25,7 @@ Rails.application.routes.draw do
   get    '/new-order',     to: 'orders#new'
   post   '/new-order',     to: 'orders#create'
   get    '/order-confirmation', to: 'orders#confirmation'
-  resources :admins, only: [:index]
+  resources :admins, only: [:index, :show, :edit, :update]
   resources :users
   resources :posts
   resources :orders
