@@ -11,9 +11,12 @@
   </div>
 </div>
 <script>
-    $(".fb-like").attr("data-href", window.location.href);
-    $(".fb-comments").attr("data-href", window.location.href);
+    var x =  window.location.href
+    x = x.replace(/^https:\/\//i, 'http://');
+    $(".fb-like").attr("data-href", x);
+    $(".fb-comments").attr("data-href", x);
 </script>
+<%= puts request.original_url %>
 <!--small change to test if fb disappears-->
 
 

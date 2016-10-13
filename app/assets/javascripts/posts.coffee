@@ -12,4 +12,4 @@
     fjs.parentNode.insertBefore js, fjs
     return
   ) document, 'script', 'facebook-jssdk'
-  console.log('Facebook comment only works on refresh')
+
