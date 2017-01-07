@@ -1,5 +1,12 @@
 #heading-carousel {
   width: 90%;
   margin: auto;
+  .item {
+    a{
+      position: relative;
+      top: -30px;
+    }
+  }
 }
+
 
