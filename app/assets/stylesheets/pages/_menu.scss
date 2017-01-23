@@ -24,6 +24,11 @@
   overflow: auto;
   text-align: center;
   margin: 20px auto;
+  .row {
+    width: 100%;
+    padding: none;
+    margin: auto;
+  }
   h1 {
     text-align: center;
   }
