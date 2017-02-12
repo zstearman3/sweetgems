@@ -4,11 +4,24 @@
   .item {
     a{
       position: relative;
-      top: -30px;
+      top: -15px;
       float: right;
       height: 0;
+      font-size: 0.7em;
+      padding-right: 5px;
     }
   }
+}
+
+@media screen and (min-width: 768px) {
+  #heading-carousel {
+    .item {
+      a{
+        top: -30px;
+        font-size: 1.0em;
+      }
+    }
+  } 
 }
 
 
