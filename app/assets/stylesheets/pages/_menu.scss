@@ -9,6 +9,9 @@
     margin-top: 20px;
     font-size: 0.9em;
   }
+  .prices{
+    font-size: 1.3em;
+  }
 }
 .monthly-flavor{
   margin-top: 5px;
@@ -21,33 +24,37 @@
 }
 .menu-content {
   width: 80%;
+  height: auto;
   margin: auto;
   overflow: auto;
   text-align: center;
   margin: 20px auto;
-  .row {
+  clear: both;
+  .menu {
+    overflow: hidden;
     width: 100%;
-    padding: none;
-    margin: auto;
-  }
-  h1 {
-    text-align: center;
-  }
-  .menu-item {
-    padding-top: 40px;
-    h2{
-      font-size: 1.2em;
+    clear: both;
+    h1 {
+      text-align: center;
     }
-    p {
-      font-size: 0.8em;
-    }
-    img {
-      max-width: 100%;
+    .menu-item {
+      padding-top: 40px;
+      h2{
+        font-size: 1.2em;
+      }
+      p {
+        font-size: 0.8em;
+      }
+      img {
+        max-width: 100%;
+        border-radius: 100px;
+      }
     }
   }
 }
 .order-btn {
   width: 200px;
+  height: auto;
   margin: 15px auto;
   text-align: center;
 }
@@ -99,9 +106,6 @@
     p {
       font-size: 1.0em;
     }
-    .prices{
-      font-size: 1.4em;
-    }
   }
   .monthly-flavor{
     img {
@@ -110,12 +114,17 @@
   }
   .menu-content {
     width: 55%;
-    .menu-item {
-      h2{
-        font-size: 1.4em;
-      }
-      p {
-        font-size: 1.0em;
+    .menu {
+      .menu-item {
+        h2{
+          font-size: 1.4em;
+        }
+        p {
+          font-size: 1.0em;
+        }
+        img {
+          border-radius: 100px;
+        }
       }
     }
   }
