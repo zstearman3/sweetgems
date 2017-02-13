@@ -3,14 +3,17 @@ class OrdersController < ApplicationController
   
   def show
     @order = Order.find(params[:id])
+    @user ||= User.new
   end
   
   def new
     @order = Order.new
+    @user ||= User.new
   end
   
   def create
     @order = Order.new(order_params)
+    @user ||= User.new
     if @order.save
       OrderMailer.new_order(@order).deliver_now
       redirect_to "/order-confirmation"
@@ -21,14 +24,17 @@ class OrdersController < ApplicationController
   
   def index
     @orders = Order.all.order('created_at ASC')
+    @user ||= User.new
   end
   
   def edit
     @order = Order.find(params[:id])
+    @user ||= User.new
   end
   
   def update
     @order = Order.find(params[:id])
+    @user ||= User.new
     if @order.update_attributes(order_params)
       flash[:success] = "Order Updated!"
       redirect_to '/orders'
@@ -37,7 +43,12 @@ class OrdersController < ApplicationController
     end
   end
   
+  def confirmation
+    @user ||= User.new
+  end
+  
   def destroy
+    @user ||= User.new
     Order.find(params[:id]).destroy
     flash[:success] = "Order deleted"
     redirect_to '/orders'

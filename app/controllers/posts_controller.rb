@@ -3,14 +3,17 @@ class PostsController < ApplicationController
   
   def show
     @post = Post.find(params[:id])
+    @user ||= User.new
   end
   
   def new
     @post = Post.new
+    @user ||= User.new
   end
   
   def create
     @post = Post.new(blog_params)
+    @user ||= User.new
     if @post.save
       flash[:success] = "Post created!"
       redirect_to blog_path
@@ -29,10 +32,12 @@ class PostsController < ApplicationController
   
   def edit
     @post = Post.find(params[:id])
+    @user ||= User.new
   end
   
   def update
     @post = Post.find(params[:id])
+    @user ||= User.new
     if @post.update_attributes(blog_params)
       flash[:success] = "Post updated!"
       redirect_to '/blog'
@@ -42,6 +47,7 @@ class PostsController < ApplicationController
   end
   
   def destroy
+    @user ||= User.new
     Post.find(params[:id]).destroy
     flash[:success] = "Post deleted!"
     redirect_to '/blog'

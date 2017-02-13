@@ -7,9 +7,11 @@ class StaticPagesController < ApplicationController
   end
 
   def contact
+    @user ||= User.new
   end
 
   def about
+    @user ||= User.new
   end
   
   def menu
@@ -17,5 +19,6 @@ class StaticPagesController < ApplicationController
   end
   
   def blog
+    @user ||= User.new
   end
 end

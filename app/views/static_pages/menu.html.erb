@@ -95,15 +95,3 @@
 <div class="menu-photos">
 
 </div>
-
-<div class = "email-signup">
-  <div class="col-md-6 col-md-offset-3">
-    <p>Join our mailing list to keep up to date with our latest flavors and news!</p>
-    <%= form_for(@user, url: menu_path) do |f| %>
-      <%= render 'shared/error_messages' %>
-      
-      <%= f.email_field :email, class: 'form-field', :placeholder => "your@email.com" %>
-      <%= f.submit "Join", class: "btn btn-lg" %>
-    <% end %>
-  </div>
-</div>

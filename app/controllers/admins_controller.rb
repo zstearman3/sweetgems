@@ -3,10 +3,12 @@ class AdminsController < ApplicationController
   
   def index
     @admins = Admin.all
+    @user ||= User.new
   end
   
   def show
     @admin = Admin.find(params[:id])
+    @user ||= User.new
   end
   
   private
