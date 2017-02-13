@@ -17,13 +17,36 @@
   margin: 20px auto;
   overflow: hidden;
   p{
-    padding: 10px 0;
+    padding-top: 10px;
   }
   .col-sm-6{
     font-size: 0.8em;
   }
   img{
+    padding-top: 10px;
     max-width: 100%;
+  }
+  h1{
+    color: $sg-green;
+  }
+  h3{
+    text-align: center;
+    margin-top: 5px;
+    color: $sg-purple;
+  }
+  .image-container{
+    width: 100%;
+    a{
+      position: relative;
+      font-size: 0.8em;
+      top: -20px;
+      left: 5px;
+      padding-bottom: 0px;
+    }
+    .photo-credit{
+      position: relative;
+      top: -20px;
+    }
   }
 }
 
