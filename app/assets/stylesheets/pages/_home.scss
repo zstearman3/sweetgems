@@ -12,6 +12,20 @@
     }
   }
 }
+.block-paragraph{
+  width: 60%;
+  margin: 20px auto;
+  overflow: hidden;
+  p{
+    padding: 10px 0;
+  }
+  .col-sm-6{
+    font-size: 0.8em;
+  }
+  img{
+    max-width: 100%;
+  }
+}
 
 @media screen and (min-width: 768px) {
   #heading-carousel {
@@ -21,7 +35,12 @@
         font-size: 1.0em;
       }
     }
-  } 
+  }
+  .block-paragraph{
+    img{
+
+    }
+  }
 }
 
 
