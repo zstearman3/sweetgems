@@ -13,7 +13,7 @@
   }
 }
 .block-paragraph{
-  width: 60%;
+  width: 90%;
   margin: 20px auto;
   overflow: hidden;
   p{
@@ -33,6 +33,7 @@
     text-align: center;
     margin-top: 5px;
     color: $sg-purple;
+    font-size: 3em;
   }
   .image-container{
     width: 100%;
@@ -60,8 +61,11 @@
     }
   }
   .block-paragraph{
-    img{
-
+    width: 60%;
+    .image-container{
+      h3{
+        font-size: 1.75em;
+      }
     }
   }
 }
